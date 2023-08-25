@@ -1,6 +1,6 @@
 .top-header {
-    background: var(--gry50);
-    padding: 10px 15px;
+    background: var(--gray50);
+    padding: 0 15px;
     position: static;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     display: flex;

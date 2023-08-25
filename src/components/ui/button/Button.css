@@ -1,0 +1,29 @@
+.btn{
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    display: block;
+    text-align: center;
+}
+
+.btn-fill{
+    background: var(--yellow);
+    color: var(--white);
+}
+
+.btn-outline{
+    border: 1px solid;
+    border-color: var(--gray800);
+    color: var(--gray800);
+    transition: all 0.25s linear;
+}
+
+.btn-outline:hover{
+    background-color: var(--gray800);
+    color: var(--white);
+}
+
+.btn-fill:hover{
+    background-color: var(--yellow-light);
+    color: var(--white);
+}

@@ -1,29 +1,27 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./menulist.css"
-import { NavLink } from 'react-router-dom'
+import DesktopMenuList from './DesktopMenuList'
+import MobileMenuList from './MobileMenuList'
+import MenuIcon from '../../../libs/Icons/MenuIcon'
 
 const MenuList = () => {
-    return (
-        <nav>
-            <ul className='menu-items'>
-                <li className='item'>
-                    <NavLink to="/" className="item-link">
-                        Explore
-                    </NavLink>
-                </li>
-                <li className='item'>
-                    <NavLink to="/test" className="item-link">
-                        Explore
-                    </NavLink>
-                </li>
+    const [open, setOpen] = useState(false)
+    const handelOpen = () => {
+        setOpen(true)
+    }
 
-                <li className='item'>
-                    <NavLink to="/test-2" className="item-link">
-                        Explore
-                    </NavLink>
-                </li>
-            </ul>
-        </nav>
+    const handelClose = () => {
+        setOpen(false)
+    }
+    return (
+        <>
+            <div className='menu-icon'>
+                <MenuIcon handelOpen={handelOpen} />
+            </div>
+            <DesktopMenuList />
+
+            <MobileMenuList open={open} handelClose={handelClose} />
+        </>
     )
 }
 

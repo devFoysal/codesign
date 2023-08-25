@@ -1,0 +1,20 @@
+.social-media-links {
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid #1C1C1C;
+    align-items: center;
+    overflow: hidden;
+}
+
+.social-media-links .social-item {}
+
+.social-media-links .social-item-link {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media-links .social-item-link:hover {
+    background: var(--gray50);
+}

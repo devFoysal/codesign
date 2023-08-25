@@ -1,0 +1,18 @@
+.categories{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.categories .item a{
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 24px;
+    color: var(--gray500);
+}
+
+.categories .item a.active{
+    color: var(--gray800);
+}

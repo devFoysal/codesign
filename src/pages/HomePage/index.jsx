@@ -1,24 +1,20 @@
 import React from 'react'
-import { useGetImagesQuery } from '../../app/features/images/imagesApiSlice';
+import Banner from '../../components/Banner';
+import Masonry from '../../components/Home/Masonry';
+import Categories from '../../components/Categories/Categories';
 
 const HomePage = () => {
-    const {
-        data,
-        isLoading,
-        isSuccess,
-        isError,
-        error
-    } = useGetImagesQuery(
-        "allImages", {
-        pollingInterval: 60000,
-        refetchOnFocus: true,
-        refetchOnMountOrArgChange: true,
-    }
-    );
+
     return (
         <div>
-            Home page
-            {/* {isSuccess && JSON.stringify(data)} */}
+            <Banner />
+
+            <div className="category">
+                <Categories />
+            </div>
+            <div className="container">
+                <Masonry />
+            </div>
         </div>
     )
 }
