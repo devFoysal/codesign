@@ -1,6 +1,6 @@
 # Frontend Design Task
 
-This is live demo link [Click hare](https://codesign-task.vercel.app/).
+This is live demo link [Click here](https://codesign-task.vercel.app/).
 
 ## Local Setup
 Clone the git repository from this link [Click here](https://github.com/devFoysal/codesign.git).
