@@ -15,10 +15,10 @@ const HomePage = () => {
         refetchOnMountOrArgChange: true,
     }
     );
-    console.log(isError, error, isSuccess);
     return (
         <div>
-            {isSuccess && JSON.stringify(data)}
+            Home page
+            {/* {isSuccess && JSON.stringify(data)} */}
         </div>
     )
 }

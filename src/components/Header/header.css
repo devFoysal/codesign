@@ -1,0 +1,10 @@
+.top-header {
+    background: var(--gry50);
+    padding: 10px 15px;
+    position: static;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+}
